@@ -63,3 +63,28 @@ h1 {
   }
 }
 
+/* COMENTARIO SOBRE MAIN OCUPAR TUDO*/
+
+/* Este código trata da situação de vc ter 
+um main com pouco conteúdo e o footer não 
+subir e ficar voando */
+
+main {
+display:flex;
+
+/* uma primeira abordagem seria dar ao main
+ um height:70vh (que é a diferença entre 
+ ele e os outros filhos do body) */
+ min-height: 70vh;
+}
+
+ /* uma alternativa seria colocar 
+ main com flex:1 pois assim o 
+ main cresce se precisar, mas se
+ tiver pouco conteúdo preenche a diferença 
+ para header e footer e o footer não sobe.*/
+ 
+ main {
+   flex:1;
+ }
+ 
